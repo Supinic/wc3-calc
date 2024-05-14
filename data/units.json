@@ -1,0 +1,304 @@
+{
+  "units": {
+    "human": [
+      {
+        "name": "Peasant",
+        "type": "Ground",
+        "armor": {
+          "type": "Medium",
+          "base": 0
+        },
+        "hitpoints": 230,
+        "attacks": [
+          {
+            "type": "Normal",
+            "base": 4,
+            "dice": 1,
+            "roll": 2,
+            "cooldown": 2.000,
+            "targets": ["Ground", "Structure"]
+          }
+        ],
+        "basicUpgrades": []
+      },
+      {
+        "name": "Militia",
+        "type": "Ground",
+        "armor": {
+          "type": "Heavy",
+          "base": 4
+        },
+        "hitpoints": 230,
+        "attacks": [
+          {
+            "type": "Normal",
+            "base": 11,
+            "dice": 1,
+            "roll": 2,
+            "cooldown": 1.200,
+            "targets": ["Ground", "Structure"]
+          }
+        ],
+        "basicUpgrades": ["swords", "plating"]
+      },
+      {
+        "name": "Footman",
+        "type": "Ground",
+        "armor": {
+          "type": "Heavy",
+          "base": 2
+        },
+        "hitpoints": 420,
+        "attacks": [
+          {
+            "type": "Normal",
+            "base": 11,
+            "dice": 1,
+            "roll": 2,
+            "cooldown": 1.350,
+            "targets": ["Ground", "Structure"]
+          }
+        ],
+        "basicUpgrades": ["swords", "plating"]
+      },
+      {
+        "name": "Rifleman",
+        "type": "Ground",
+        "armor": {
+          "type": "Medium",
+          "base": 0
+        },
+        "hitpoints": 535,
+        "attacks": [
+          {
+            "type": "Piercing",
+            "base": 16,
+            "dice": 2,
+            "roll": 4,
+            "cooldown": 1.350,
+            "targets": ["Ground", "Air", "Structure"]
+          }
+        ],
+        "basicUpgrades": ["gunpowder", "leather"]
+      },
+      {
+        "name": "Knight",
+        "type": "Ground",
+        "armor": {
+          "type": "Heavy",
+          "base": 5
+        },
+        "hitpoints": 885,
+        "attacks": [
+          {
+            "type": "Normal",
+            "base": 28,
+            "dice": 2,
+            "roll": 5,
+            "cooldown": 1.400,
+            "targets": ["Ground", "Structure"]
+          }
+        ],
+        "basicUpgrades": ["swords", "plating"],
+        "extraUpgrades": ["animal-war-training", "sundering-blades"]
+      },
+      {
+        "name": "Mortar Team",
+        "type": "Ground",
+        "armor": {
+          "type": "Heavy",
+          "base": 0
+        },
+        "hitpoints": 360,
+        "attacks": [
+          {
+            "type": "Siege",
+            "base": 51,
+            "dice": 1,
+            "roll": 13,
+            "cooldown": 3.500,
+            "targets": ["Ground", "Structure"]
+          }
+        ],
+        "basicUpgrades": ["gunpowder", "leather"]
+      },
+      {
+        "name": "Siege Engine",
+        "type": "Ground",
+        "armor": {
+          "type": "Fortified",
+          "base": 2
+        },
+        "hitpoints": 700,
+        "attacks": [
+          {
+            "type": "Siege",
+            "base": 44,
+            "dice": 1,
+            "roll": 11,
+            "cooldown": 2.100,
+            "targets": ["Ground", "Structure"]
+          },
+          {
+            "type": "Piercing",
+            "base": 12,
+            "dice": 1,
+            "roll": 2,
+            "cooldown": 2.000,
+            "targets": ["Air"]
+          }
+        ],
+        "basicUpgrades": ["gunpowder", "plating"]
+      },
+      {
+        "name": "Flying Machine",
+        "type": "Air",
+        "armor": {
+          "type": "Heavy",
+          "base": 2
+        },
+        "hitpoints": 250,
+        "attacks": [
+          {
+            "type": "Piercing",
+            "base": 17,
+            "dice": 1,
+            "roll": 2,
+            "cooldown": 2.000,
+            "targets": ["Air"]
+          },
+          {
+            "type": "Siege",
+            "base": 6,
+            "dice": 1,
+            "roll": 2,
+            "cooldown": 2.500,
+            "targets": ["Ground", "Structure"],
+            "requires": "flying-machine-bombs"
+          }
+        ],
+        "basicUpgrades": ["gunpowder", "plating"]
+      },
+      {
+        "name": "Priest",
+        "type": "Ground",
+        "armor": {
+          "type": "Unarmored",
+          "base": 0
+        },
+        "hitpoints": 290,
+        "attacks": [
+          {
+            "type": "Magic",
+            "base": 7,
+            "dice": 1,
+            "roll": 2,
+            "cooldown": 2.000,
+            "targets": ["Ground", "Air", "Structure"]
+          }
+        ],
+        "basicUpgrades": [],
+        "meta": {
+          "caster": true,
+          "ignoresBasicUpgrades": true,
+          "extraHitpointsPerUpgrade": 40
+        }
+      },
+      {
+        "name": "Sorceress",
+        "type": "Ground",
+        "armor": {
+          "type": "Unarmored",
+          "base": 0
+        },
+        "hitpoints": 325,
+        "attacks": [
+          {
+            "type": "Magic",
+            "base": 9,
+            "dice": 1,
+            "roll": 3,
+            "cooldown": 1.750,
+            "targets": ["Ground", "Air", "Structure"]
+          }
+        ],
+        "basicUpgrades": [],
+        "meta": {
+          "caster": true,
+          "ignoresBasicUpgrades": true,
+          "extraHitpointsPerUpgrade": 40
+        }
+      },
+      {
+        "name": "Spell Breaker",
+        "type": "Ground",
+        "armor": {
+          "type": "Medium",
+          "base": 3
+        },
+        "hitpoints": 600,
+        "attacks": [
+          {
+            "type": "Magic",
+            "base": 12,
+            "dice": 1,
+            "roll": 3,
+            "cooldown": 1.900,
+            "targets": ["Ground", "Structure"]
+          }
+        ],
+        "basicUpgrades": ["swords", "plating"]
+      },
+      {
+        "name": "Dragonhawk Rider",
+        "type": "Air",
+        "armor": {
+          "type": "Light",
+          "base": 1
+        },
+        "hitpoints": 625,
+        "attacks": [
+          {
+            "type": "Piercing",
+            "base": 13,
+            "dice": 1,
+            "roll": 3,
+            "cooldown": 1.750,
+            "targets": ["Ground", "Air", "Structure"]
+          }
+        ],
+        "basicUpgrades": ["swords", "leather"],
+        "extraUpgrades": ["animal-war-training"]
+      },
+      {
+        "name": "Gryphon Rider",
+        "type": "Air",
+        "armor": {
+          "type": "Light",
+          "base": 0
+        },
+        "hitpoints": 875,
+        "attacks": [
+          {
+            "type": "Magic",
+            "base": 44,
+            "dice": 1,
+            "roll": 3,
+            "cooldown": 2.200,
+            "targets": ["Ground", "Structure"]
+          },
+          {
+            "type": "Magic",
+            "base": 44,
+            "dice": 1,
+            "roll": 3,
+            "cooldown": 2.400,
+            "targets": ["Air"]
+          }
+        ],
+        "basicUpgrades": ["swords", "leather"],
+        "extraUpgrades": ["animal-war-training"]
+      }
+    ]
+  }
+}
