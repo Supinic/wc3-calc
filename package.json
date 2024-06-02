@@ -1,0 +1,18 @@
+{
+  "name": "wc3-calc",
+  "version": "1.0.0",
+  "main": "build/index.js",
+  "repository": "https://github.com/Supinic/wc3-calc",
+  "author": "Supinic <supinic@protonmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.4",
+    "typescript": "^5.4.5"
+  },
+  "scripts": {
+    "test": "mocha",
+    "build": "tsc"
+  }
+}
