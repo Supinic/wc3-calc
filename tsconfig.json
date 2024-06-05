@@ -6,6 +6,7 @@
     "module": "esnext",
     /* Specify what module code is generated. */
     "rootDir": "./src",
+    "outDir": "./build",
     "moduleResolution": "node",
     "esModuleInterop": true
   }
